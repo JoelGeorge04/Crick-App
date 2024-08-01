@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.joelGeo.logg" />
+                  <option name="mobileSdkAppId" value="1:161541802870:android:ee6c1e4bbbc70aa7194857" />
+                  <option name="projectId" value="logg-a5ef9" />
+                  <option name="projectNumber" value="161541802870" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
