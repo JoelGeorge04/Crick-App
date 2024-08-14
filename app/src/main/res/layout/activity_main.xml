@@ -2,13 +2,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="35px"
-    android:background="#C58989"
+    android:background="#CCB8B8"
+
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:layout_width="167dp"
-        android:layout_height="144dp" />
 
     <TextView
         android:layout_width="match_parent"

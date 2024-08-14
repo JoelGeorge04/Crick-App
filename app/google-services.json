@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "161541802870",
-    "project_id": "logg-a5ef9",
-    "storage_bucket": "logg-a5ef9.appspot.com"
+    "project_number": "497803933037",
+    "project_id": "login-f8f78",
+    "storage_bucket": "login-f8f78.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:161541802870:android:ee6c1e4bbbc70aa7194857",
+        "mobilesdk_app_id": "1:497803933037:android:ed3365226d30672a2e1664",
         "android_client_info": {
           "package_name": "com.joelGeo.logg"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAUvWagtKM3bSEQz1hvB59Bk4fj1Tqt3bY"
+          "current_key": "AIzaSyBcUHc8WyFlbmRn8hMDW1dYiYshrTC9l3o"
         }
       ],
       "services": {

@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.joelGeo.logg" />
-                  <option name="mobileSdkAppId" value="1:161541802870:android:ee6c1e4bbbc70aa7194857" />
-                  <option name="projectId" value="logg-a5ef9" />
-                  <option name="projectNumber" value="161541802870" />
+                  <option name="mobileSdkAppId" value="1:497803933037:android:ed3365226d30672a2e1664" />
+                  <option name="projectId" value="login-f8f78" />
+                  <option name="projectNumber" value="497803933037" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
