@@ -1,0 +1,1007 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="204"
+    android:viewportHeight="192"
+    android:width="24dp"
+    android:height="24dp">
+    <path
+        android:pathData="M91.5 4L112.5 4L135.5 9L155.5 20L164 27.5L158 32.5L141.5 50L137.5 53Q129.2 44.8 116.5 41L112.5 40L91.5 40L79.5 44L63 55L53 68.5L48.5 78L19 54.5Q27.7 36.7 42.5 25L48.5 20L64.5 11L72.5 8L91.5 4Z"
+        android:fillColor="#E64130"
+        android:fillAlpha="0.9921569"
+        android:strokeColor="#E64130"
+        android:strokeAlpha="0.9921569"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M96.5 2L108.5 2L116.5 4L118.5 4L129.5 6L135 8.5L132.5 9L128.5 7L112.5 4L92 3.5L96.5 2Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M86.5 3L91 4.5L73.5 8L73.5 7L81.5 4L83.5 4L86.5 3Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M69.5 8L72 8.5L64.5 11L48.5 20L29 38.5L18.5 55L19 53.5L22 46.5L33.5 32L37 29.5L37 28L39 28Q37.9 25.3 40.5 26L45.5 21L59.5 12L69.5 8Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M138.5 10L141 11.5L139.5 11L138.5 10Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M142.5 12L152 16Q150.9 18.7 153.5 18L154.5 20L142.5 13L142.5 12Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M156.5 20L160 22Q158.9 24.7 161.5 24L163.5 27L156.5 20Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M163.5 28L138.5 54L136 54Q137.1 51.3 134.5 52L132.5 49L137.5 53L158 33.5L159.5 31L163.5 28Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M91.5 40L99 40.5Q72 44 59 61.5Q52.4 68.9 49.5 80L49 77.5L53 68.5L63 55L79.5 44L91.5 40Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M104.5 40Q122.4 39.6 131 48.5L129.5 48L122.5 44L118.5 44L116.5 42L104.5 41L104.5 40Z"
+        android:fillColor="#E74236"
+        android:fillAlpha="0.945098"
+        android:strokeColor="#E74236"
+        android:strokeAlpha="0.945098"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M18.5 55L49 78.5L48 89.5L47 90.5L47 99.5L48 102.5Q46.8 110.2 50 113.5L18.5 138L12 124.5L9 112.5Q10.3 107.7 8 106.5L8 88.5L9 85.5L10 74.5L18.5 55Z"
+        android:fillColor="#F8BB09"
+        android:fillAlpha="0.9647059"
+        android:strokeColor="#F8BB09"
+        android:strokeAlpha="0.9647059"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M87.5 3L92 3.5L87.5 4L87.5 3Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M114.5 3L117 3.5L114.5 4L114.5 3Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M140.5 10L143 11.5L141.5 12L140.5 10Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M52.5 16L51.5 18L52.5 16Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M42.5 23L40.5 26L42.5 23Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M36.5 29L34.5 32L36.5 29Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M27.5 39L26.5 41L27.5 39Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M99.5 40L104 40.5L99.5 41L99.5 40Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M25.5 42L23.5 45L25.5 42Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M131.5 49L132.5 51L131.5 49Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M68.5 52L67.5 54L68.5 52Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M140.5 52L139.5 54L140.5 52Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M60.5 60L59.5 62L60.5 60Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M54.5 69L53.5 71L54.5 69Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M101 79L189.5 79L191 80.5L190.5 84L190 80L102 80L102 115L104 115.5L101 116L101 79Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M191.5 85L192 95.5L191 95.5L191.5 85Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M191.5 101L192 112.5L191 112.5L191.5 101Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M190.5 114L191 119.5L189.5 124L189 120.5L190.5 114Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M50.5 115L52 118.5L51 118.5L50.5 115Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M151.5 117L152 119.5L145.5 132L146 130.5L151.5 117Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M52.5 120L57 127.5L55 126.5L52.5 120Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M188.5 125L189 127.5L187.5 131L187 128.5L188.5 125Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M57.5 129L59.5 132L57.5 129Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M144.5 133L136.5 142L144.5 133Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M61.5 134L71 142.5L67.5 140L61.5 134Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M17.5 137L20 140.5L18 139.5L17.5 137Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M183.5 139L184 140.5L182.5 143L182 141.5L183.5 139Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M20.5 142L27 151.5L24 149.5L20 143.5L20.5 142Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M134.5 142L133.5 144L134.5 142Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M72.5 143L83 148.5L81.5 149L73.5 145L72.5 143Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M131.5 144L130.5 146L123.5 149L123.5 148L131.5 144Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M181.5 144L181 145.5L176.5 153L178 150.5L181.5 144Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M116.5 150L119 150.5L116.5 151L116.5 150Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M112.5 151L115 151.5L112.5 152L112.5 151Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M96.5 152L108 152.5L96.5 153L96.5 152Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M28.5 154L38 164.5L31 158.5L28.5 154Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M175.5 154L174 156.5L169.5 162L173 157.5L175.5 154Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M163.5 167L165 167.5L159.5 172L163.5 167Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M42.5 168L44.5 171L42.5 168Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M156.5 173L155.5 175L156.5 173Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M50.5 174L51.5 176L50.5 174Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M153.5 175L151.5 178L142.5 182L142.5 181L153.5 175Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M53.5 176L61 180.5L59.5 181L54.5 178L53.5 176Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M62.5 181L66 182.5L64.5 183L62.5 181Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M75.5 186L95.5 190L108.5 190L130.5 186L130.5 187L117.5 190L95.5 191L78.5 188L75.5 187L75.5 186Z"
+        android:fillColor="#568798"
+        android:fillAlpha="0.2666667"
+        android:strokeColor="#568798"
+        android:strokeAlpha="0.2666667"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M102 80L189.5 80L190 83.5L191 84.5L192 100.5L191 101.5L190 119.5L186 134.5Q178.4 153.9 164.5 167L134 143.5L145 133.5L151 122.5L152 116L104.5 116L102 115L102 80ZM104 81L104 96L106 96L106 85L176 85L113 84L176 83L176 81L104 81ZM178 81L179 84L177 85L179 85Q177 89 178 97L181 96L180 92Q179 87 182 88L183 83L185 83Q183 80 178 81ZM186 81L186 83L185 86L186 88L183 96Q186 97 186 103L187 90L188 92L188 91L190 91L188 86L189 83L186 81ZM112 90L113 92L175 92L175 90L112 90ZM110 92Q108 97 112 96Q114 91 110 92ZM109 96L108 111L104 111L106 115L109 113L109 96ZM188 97L187 104L188 104L188 97ZM186 104L185 112L186 113L185 112L184 114L187 115L189 117L186 110L186 104ZM190 104L188 107L189 110L190 107L190 104ZM147 111L149 114L151 113L147 111ZM155 111L152 115L154 121Q152 125 157 124L158 121L154 118L156 115L155 111ZM112 112L113 114L147 114L145 112L112 112ZM180 112L178 114L178 124L177 124Q174 125 175 130L178 131L179 132L178 129L181 117Q183 111 180 112ZM160 115L158 117Q157 121 161 119L160 115ZM183 117Q180 122 183 124L182 129L183 133Q184 136 180 134L180 137L183 138Q186 137 185 132L184 129L186 129L187 125L186 125L186 124L184 123L183 117ZM153 125L151 126L151 127L152 127L152 129Q155 128 154 131L158 134Q157 137 160 136L161 133L157 130Q158 127 154 128L153 125ZM150 128L148 130Q147 133 150 134L150 132L151 129L150 128ZM146 133L144 138L149 135L146 133ZM153 136L150 137Q150 142 147 144L144 140L141 142Q142 144 140 143L139 145Q141 144 140 147Q142 150 143 147L142 146L143 144L142 143L144 144L143 146L145 148L152 142Q151 139 154 140L155 144L152 146L158 148Q159 145 156 146Q155 143 158 144L158 140L153 136ZM176 136L175 141L179 142L180 143Q181 140 179 141L179 140L178 137L176 136ZM163 143L160 144L162 148L162 147Q166 145 163 143ZM179 143L178 146L179 146L179 143ZM172 144L172 145L174 145L172 144ZM152 146Q148 147 148 152L151 153L151 155L154 154L152 146ZM167 146L162 152Q161 156 164 157L162 160L166 158L165 155L165 153L170 148Q171 144 167 146ZM175 146L177 150L178 148Q179 144 175 146ZM158 148Q157 151 160 150Q161 147 158 148ZM173 148L169 154L172 154L173 152L175 153L173 148ZM158 152L157 155L155 156L156 158Q159 159 158 156L161 156L161 155L158 152ZM172 155L171 157L173 156L172 155ZM168 158L168 160L170 159L168 158ZM160 160L162 162L163 162L160 160ZM167 160Q165 163 168 162L167 160ZM165 162L163 164L165 165L165 162Z"
+        android:fillColor="#4185F2"
+        android:fillAlpha="0.9921569"
+        android:strokeColor="#4185F2"
+        android:strokeAlpha="0.9921569"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M104 81L175.5 81L176 83L113 83.5L176 84.5L106 85L106 95.5L104 96L104 81Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M178 81Q183.8 79.5 185.5 83L186 81L189 82.5L188 85.5L190 90.5L188 90.5L187.5 92L186.5 90L185.5 103Q186.3 97.2 183 95.5L186 87.5L185 85.5Q187.3 84.3 184.5 83Q182.3 82.3 183 84.5L182 88Q178.7 86.7 180 91.5L181 95.5L178 97Q176.8 88.7 179 85L177 84.5L179 83.5L178 81Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M112 90L174.5 90L175 92L112.5 92L112 96L110 96L110 92Q113 93 112 90Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M108.5 96L109 112.5L105.5 115L104 111L108 110.5L108.5 96Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M187.5 97L188 103.5L187 103.5L187.5 97Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M185.5 104L186 109.5L189 116.5L187 116.5Q186.3 118.8 188.5 118L188.5 119L186 117.5L187 115.5L184 113.5L185.5 104Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M189.5 104L190 106.5L188.5 110L188 106.5L189.5 104Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M147 111L151 112.5L148.5 114L146.5 114L112.5 114L111 112.5L144.5 112L147 113L147 111Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M154.5 111L156 114.5L154 117.5L158 120.5L156.5 124Q152.3 125.3 154 120.5L152 114.5L154.5 111Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M179.5 112Q182.9 111.1 181 116.5L178 128.5L179 131.5L177.5 131L175 129.5Q174 125 176.5 124L178 123.5L178 113.5L179.5 112Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M159.5 115L161 119Q156.9 120.7 158 116.5L159.5 115Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M182.5 117L184 123L187 124.5L184 130.5L185 134.5L181.5 139L181.5 137Q178.5 137.7 180 134Q183.8 135.5 183 132.5L182 128.5L183 123.5Q180.4 121.9 182.5 117Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M152.5 125L154 128Q157.8 126.5 157 129.5L161 132.5L159.5 136Q156.9 136.8 158 133.5L154 130.5Q154.7 127.9 152 129L152 127L150.5 127L150.5 126L152.5 125Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M149.5 128L151 128.5L150 131.5L150 133.5L145.5 138Q143.3 138.8 144 136.5L146 133Q149.3 134.3 148 129.5L149.5 128Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M176.5 135L179 139.5L178.5 141L180.5 140L180 141.5L176.5 150L175 146Q179.1 147.7 178 143.5L178.5 142L176.5 143L176.5 141Q173.1 141.9 175 136.5L176.5 135Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M152.5 136L158 139.5L158 144Q155 143 156 146L158 146L160 150Q157 151 158 148L155.5 148L152 146L155.5 155Q158.1 155.8 157 152.5L158.5 153L161 154.5L161 156L158 156Q159 159 156 158L153.5 154L150.5 155L150.5 153L148 151.5L148 149.5L153.5 144Q156.1 144.8 155 141.5L152 140L147.5 146L144.5 148L143.5 146Q141.8 149.8 140 146.5Q140.8 144.3 138.5 145L138 142.5L139.5 141L139.5 143Q141.8 143.8 141 141.5L144 140L146.5 144Q150.1 141.9 150 137L152.5 136ZM144 143L142 146L144 145L144 143Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M162.5 143Q165.8 144.8 162 146.5L161.5 148L160 144L162.5 143Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M171.5 144L174 144.5L171.5 145L171.5 144Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M166.5 146Q170.9 144.5 170 147.5L165 152.5L165 154.5L166 157.5Q162.9 159.3 164.5 161L162.5 160L162.5 162L158 159.5L159.5 160Q162.8 161.1 162 158.5Q166 156.5 162 154.5Q162.1 148.1 166.5 146Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M172.5 148L175 153L172.5 152L171 154.5L173 155.5L170.5 157Q172.1 155.3 169 153.5L172.5 148Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M168 158L170 158.5L168 159.5L168 158Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M166.5 160L167.5 162Q164.7 162.7 166.5 160Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M164.5 162L165 164.5L163 163.5L164.5 162Z"
+        android:fillColor="#4185FA"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#4185FA"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M50.5 117L55 125.5L53 124.5L51.5 121L50.5 124L48.5 121L47 121.5Q47.8 119.3 45.5 120L45.5 119L48.5 118L48.5 119L47 119.5L51 121L50.5 117Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M46.5 124L48 127.5L46 128L46.5 124Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M50.5 125L53 126.5L51.5 130L49 126.5L50.5 125Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M37.5 126L39.5 126Q42.5 125.2 41 129L36 128.5L37.5 126Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M55.5 127L66.5 140L73 144.5L71.5 145Q69.8 141.3 68 144.5Q68.3 149.3 71.5 151L73.5 150L76 150.5Q73.3 152.3 77.5 154L80 154.5L77.5 155Q75.8 152.3 69.5 154L68 154.5L67 152.5L68 150.5L67.5 148L61 144.5L61.5 143L60 142.5L63 142L64.5 145Q68.3 146.3 67 142.5L65 142.5L66 140.5Q65.5 137.5 61.5 138L60 138.5L61 135.5L55 133Q53.9 130.3 56.5 131L56 129.5L55.5 127Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M47 131Q51.9 129.2 50 135.5L47 135.5L47 131Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M30 136L33 136L33 141Q29.2 139.5 30 142.5L29.5 145L28 142.5L30 136Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M53.5 136L55 137.5L56 143.5Q54.8 146.3 53.5 144Q49.1 145.5 50 142.5L53.5 136Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M22.5 137Q24.8 136.3 24 138.5L23.5 140L25.5 139L27 143.5Q22.8 145.8 24.5 148L23 146.5Q26.5 145 24 143.5L22 139.5L22.5 137Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M132.5 144L131.5 146L132.5 144Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M29.5 146L30 148.5L28.5 150L28 147.5L29.5 146Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M76.5 146L81 148.5L79 149.5L78.5 148L77 148.5L76.5 147L75 147.5L76.5 146Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M129.5 146L131 148.5L130 148.5L129.5 147L127.5 148L127.5 147L129.5 146Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M136.5 146L143 151.5L140.5 150L136.5 146Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M132.5 147L134 149.5L133.5 151Q135.8 150.3 135 152.5Q136.6 155.5 142 154Q144.2 159.6 138.5 158L133.5 154L130.5 154L129 154.5L130 152L132 151.5L130 150.5L133 150L132.5 147Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M26.5 148L26.5 151Q23.5 149.5 26.5 148Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M125.5 148Q129 150 124.5 152L124 150L122 150.5L123 153L121 153Q122.1 150.3 119.5 151L112 154L111.5 156L97.5 156L96.5 154L112 153.5L108 152.5Q118.7 152.2 125.5 148Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M82.5 149L96 152.5L91.5 154L88.5 152L87.5 154Q85.2 149.8 83 151.5L82.5 150L81.5 152L81 150.5L82.5 149Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M28.5 151L27.5 153L28.5 151Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M144.5 152L145.5 154L144.5 152Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M32.5 153L33 159L37 159.5L36 161.5L38 161.5L37 162.5L38.5 165L32 158.5L32 156L30 155.5L32 155L32.5 153Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M147.5 154Q150.8 154.8 150 159.5L149 159.5L148.5 156L146 157.5L148 158.5L148 160.5L146 163.5Q147.5 167.3 153 166L154 169.5L152.5 169L148.5 170L147 166L143 164.5L143.5 162L144.5 164L146 158.5L144 159.5L143.5 161Q140.5 159.5 143.5 158L145 157.5Q142.8 156.3 145.5 155L147.5 156L147.5 154Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M63.5 155L67 156Q68.3 159 64.5 158L63.5 155Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M34.5 156Q36.8 155.3 36 157.5L34.5 156Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M84.5 156L87 157.5Q84.9 161.1 80 161Q78.3 156.9 82.5 158L84.5 156Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M94.5 156L96.5 157L113.5 157L118 159.5L112 160L111.5 158L97 158L95.5 161Q92.2 162.1 93 159.5L91.5 157L94.5 156Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M122 156Q127.4 154.5 129 157.5L124.5 159L122 158.5L122 156Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M131.5 158L133.5 159L135.5 158L137 161L132.5 160Q131.3 162.3 130 159.5L131.5 158Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M151.5 158L156 161.5L154 162L152.5 159L151.5 158Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M107.5 159L110 159.5L107.5 160L107.5 159Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M48.5 160L52 160.5L48.5 161L48.5 160Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M62 160Q64.7 158.9 64 161.5L65 165.5Q64.3 167.8 60.5 167Q58.5 164.2 54 165Q52.6 161 59.5 163L62 162L62 160Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M70.5 160L77 160.5L70.5 161L70.5 160Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M152.5 162L154.5 165Q152.3 165.8 153 163.5L152.5 162Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M45.5 164L46 166L48 166.5L46.5 167L45.5 164Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M161.5 165Q164.3 166.3 162 167.5L157.5 173L155.5 172L154.5 175Q153 171.5 151.5 174L147 176L148.5 173L152.5 172Q154.2 174.8 156 170.5L154 167.5L156 167L156.5 169L158 168.5L157 171.5L160 169.5L160 167.5L161.5 165Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M40.5 166L44.5 169L46 168.5L47 171.5L46 171.5Q46.8 169.3 44.5 170L40.5 166Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M52.5 168L51.5 170L52.5 168Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M54.5 169L57 169.5L55 170.5L56 171.5L53 174.5L54.5 177L48 172.5L48.5 171L49 173Q51.7 174.1 51 171.5L52 171.5L52.5 173L55 171.5L53 170.5L54.5 169Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M143 170L147 171.5L144.5 173L143 170Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M61.5 172L62 174L65 174.5Q60.8 176.8 65.5 179L69 179.5L66.5 183L65.5 181L64 181.5L65 179.5L61.5 177L61.5 179L60 175.5L61.5 172Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M70.5 175L78 175.5L77 178L71.5 177L70 177.5L70.5 175Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M86.5 175L89.5 176L92.5 175L94.5 175L97 175.5L90.5 179L84 179Q82.5 175.2 85.5 176L86.5 175Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M98.5 175L108 176.5L102.5 179L100 178Q101.1 175.3 98.5 176L98.5 175Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M130.5 175L142.5 175L143 176.5L140.5 178L138.5 177L140 179.5L139 180.5L140 182.5L138 181.5L139 179.5Q137.2 175.3 135.5 178L132.5 179L127.5 177L123.5 177L118.5 178L118 176L129.5 176L130.5 175Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M152.5 175L151.5 177L149.5 178L150.5 176L152.5 175Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M68.5 176L67.5 178L68.5 176Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M146.5 177L147.5 179L146.5 177Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M58.5 178L59.5 180L58.5 178Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M143.5 178L146 179.5L144.5 179L143 179.5L143.5 181Q140.5 179.5 143.5 178Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M71.5 179L71 180.5Q71.8 182.8 69.5 182L71.5 179Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M112 180Q118.9 179 122 181Q123.1 183.7 120.5 183L117 183.5L117 182L112 182L112 180Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M128.5 180L134 180.5L130.5 182L128.5 180Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M77.5 181L81 181.5L76.5 183L77.5 181Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M90.5 182L103.5 182L110 183.5L107 184.5L110.5 186L111.5 184L112 185.5L111.5 187L116.5 186L116.5 188L118 188.5L116.5 189L110.5 187L109 187.5L109.5 186L105.5 185L106.5 188Q105.5 184 99.5 185L95 186.5L95.5 188L91.5 185L89.5 185L87 184.5L90.5 182Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M84.5 183Q86.8 182.3 86 184.5L83.5 186Q82 183.5 80.5 187L78 186.5L80 185.5L79.5 184L81.5 185L83.5 185L85 184.5L84.5 183Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M71.5 184L77 185.5L74.5 186L71.5 185L71.5 184Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M132.5 184L135 184.5L125.5 187L125.5 186L132.5 184Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M82.5 187L86 187.5L82.5 188L82.5 187Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M120.5 187L124 187.5L120.5 188L120.5 187Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M87.5 188L91 188.5L87.5 189L87.5 188Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M95.5 189L109 189.5L95.5 190L95.5 189Z"
+        android:fillColor="#35A754"
+        android:fillAlpha="0.9843137"
+        android:strokeColor="#35A754"
+        android:strokeAlpha="0.9843137"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M48.5 115Q52.3 125.3 59 132.5L58.5 134L61 135.5Q59.8 139.3 63.5 138Q67.1 140.1 67 145L63 143.5Q63.8 140.9 60.5 142L60.5 143L62 143.5L61.5 145L68 148.5L68 150.5L67 152.5L68.5 155L77 153.5L74.5 151L72.5 151L69 148.5L68 144.5L68.5 142L77 147.5L77.5 149L79 148.5L79.5 150L81.5 149L83.5 152L87 151.5Q84.7 152.8 87.5 154L88.5 152L92.5 154L93.5 153L111.5 153L113.5 154L115.5 152L121 151Q120 154 123 153L122 150.5L124 150L124.5 152L126.5 148L128.5 148L133.5 144L136 145L139.5 150L149 156.5L149.5 160L150.5 157L151 159L154 160.5Q153.1 163.5 157.5 162L162.5 168L160 166.5L161 168.5Q150.9 178.9 135.5 184L115.5 189L91.5 189L81 186.5Q83.2 185.2 80.5 184L79 184.5L79.5 186L67 183L66.5 181L64.5 181L60.5 180L53 174.5L54.5 172L52.5 173L51.5 171L51 173Q48.3 174.1 49 171.5L47 171.5L46.5 170L45 170.5L46 168.5Q44.3 170.1 42.5 167L39 166L36 160.5L36.5 159Q30.4 160.8 33 153.5L32 153.5Q32.8 156.1 29.5 155L19 138.5L48.5 115ZM47 120L47 122L49 121L47 120ZM50 121L50 124L51 124Q52 120 50 121ZM47 124L46 128L48 128L47 124ZM51 125L49 127L50 129L52 130L51 128L53 128L53 127L51 125ZM38 126L36 129L41 129Q42 125 40 126L40 128L38 126ZM47 131L47 136L50 136Q52 129 47 131ZM55 131L55 133L58 133L55 131ZM30 136L28 144L30 143Q29 140 33 141L33 136L30 136ZM54 136L50 143Q49 146 54 144Q55 146 56 144L55 138L54 136ZM23 137L24 139Q25 136 23 137ZM26 139L23 141L24 144Q26 147 27 144L26 139ZM131 150L132 151L132 152Q129 151 130 154L134 154L139 158L142 158Q144 152 137 154L135 151L131 150ZM78 154L78 155L80 155L78 154ZM97 154L98 156L112 156L112 154L97 154ZM64 155L65 158Q68 159 67 156L64 155ZM35 156L36 158Q37 155 35 156ZM85 156L83 158Q78 157 80 161Q85 161 87 158L85 156ZM95 156L92 157L93 160Q92 162 96 161L97 158L112 158L112 160L118 160L114 157L97 157L95 156ZM122 156L122 159L125 159L129 158Q127 154 122 156ZM132 158L130 160Q131 162 133 160L137 161L136 158L134 159L132 158ZM144 158Q141 160 144 161L145 159L144 158ZM146 158L145 164L144 162L143 165L147 166L149 170L152 169Q155 170 153 166Q148 167 146 164L148 161L148 159L146 158ZM108 159L108 160L110 160L108 159ZM49 160L49 161L52 161L49 160ZM62 160L62 162L60 163Q53 161 54 165Q58 164 61 167Q64 168 65 166L64 162Q65 159 62 160ZM71 160L71 161L77 161L71 160ZM154 163Q152 166 155 165L154 163ZM155 167L156 169Q157 166 155 167ZM158 168L155 172L157 172L158 170L158 168ZM55 169L54 171L57 170L55 169ZM143 170L145 173L147 172L143 170ZM62 172L60 174L62 177L65 175L62 174L62 172ZM152 172L149 173L147 176L153 173L152 172ZM71 175Q71 179 77 178L78 176L71 175ZM87 175L86 176Q82 175 84 179L93 178Q96 177 93 175L90 176L87 175ZM95 175L95 176L97 176L95 175ZM99 175L99 176Q101 175 100 178L103 179L108 177L99 175ZM131 175L130 176L118 176L119 178L124 177L128 177L133 179L138 176L142 178L141 177L143 177L143 175L131 175ZM65 179L65 181L68 181L69 180L65 179ZM71 180L69 182L71 182L71 180ZM112 180L112 182L117 182L117 184L121 183Q123 184 122 181Q119 179 112 180ZM129 180L131 182L134 181L129 180ZM78 181L77 183L81 182L78 181ZM91 182L89 183L88 185L91 184L93 185Q94 183 96 186L104 185L106 185L110 184L104 182L91 182ZM85 183L86 185Q87 182 85 183ZM108 185L108 186L110 186L108 185ZM112 187L112 188L116 188L112 187Z"
+        android:fillColor="#33A750"
+        android:fillAlpha="0.9960784"
+        android:strokeColor="#33A750"
+        android:strokeAlpha="0.9960784"
+        android:strokeWidth="1" />
+</vector>
