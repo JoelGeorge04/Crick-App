@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
  AppCompatButton b1;
  EditText e1,e2;
- Button btnSignIn;
+ Button btnSignIn,addPlayer;
  FirebaseAuth auth;
  FirebaseDatabase database;
  GoogleSignInClient googleSignInClient;
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
-
+  ///****************//
   loading=new Dialog((this));
   loading.setContentView(R.layout.loading);
   loading.setCancelable(false);

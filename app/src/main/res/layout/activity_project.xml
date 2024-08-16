@@ -6,21 +6,95 @@
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="ADD PLAYER"
+        android:textSize="60px"
+        android:textColor="#040303" />
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to upcoming project.."
-        android:textColor="#000000"
-        android:gravity="center"
-        android:textSize="75px"
-        android:layout_margin="10px"/>
+        android:layout_margin="10px"
+        android:text="Name:"
+        android:textColor="#040303" />
 
+    <EditText
+        android:id="@+id/nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="textPassword"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="Age"
+        android:textColor="#040303" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="D.O.B"
+        android:textColor="#040303" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your D.O.B"
+        android:inputType="date"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Player Role"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/roleRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioBatsman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batsman"
+        android:checked="true"/>
+
+    <RadioButton
+        android:id="@+id/radioBowler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bowler"/>
+    </RadioGroup>
 
     <Button
-        android:id="@+id/sign_out_button"
+        android:id="@+id/add_player"
         android:layout_width="wrap_content"
-        android:text="Sign Out"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:text="Add Player" />
 
 </LinearLayout>
