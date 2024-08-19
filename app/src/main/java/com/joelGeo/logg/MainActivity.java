@@ -35,7 +35,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.joelGeo.logg.databinding.ActivityMainBinding;
 
 import java.util.HashMap;
 
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
-  ///****************//
+
   loading=new Dialog((this));
   loading.setContentView(R.layout.loading);
   loading.setCancelable(false);
