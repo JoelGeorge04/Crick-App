@@ -2,15 +2,16 @@ package com.joelGeo.logg;
 
 public class users {
 
-    String name, age, dob;
+    String name, age, dob,role;
 
     public users() {
     }
 
-    public users(String name, String age, String dob) {
+    public users(String name, String age, String dob, String role) {
         this.name = name;
         this.age = age;
         this.dob = dob;
+        this.role = role;
     }
 
     public String getName() {
@@ -35,5 +36,13 @@ public class users {
 
     public void setDob(String dob) {
         this.dob = dob;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

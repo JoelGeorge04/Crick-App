@@ -1,7 +1,7 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#75A5A9"
+    android:background="#C2D9DB"
     android:padding="30px"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter your name"
         android:inputType="text"
+        android:textColorHint="@color/black"
         android:textColor="@color/black" />
 
     <TextView
@@ -41,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your age"
+        android:textColorHint="@color/black"
         android:inputType="number"
         android:textColor="@color/black" />
 
@@ -58,6 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your D.O.B"
+        android:textColorHint="@color/black"
         android:inputType="date"
         android:textColor="@color/black" />
 
@@ -66,6 +69,7 @@
         android:layout_height="wrap_content"
         android:text="Select Player Role"
         android:textSize="18sp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
 
@@ -80,10 +84,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Batsman"
+        android:textColor="@color/black"
         android:checked="true"/>
 
     <RadioButton
         android:id="@+id/radioBowler"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bowler"/>

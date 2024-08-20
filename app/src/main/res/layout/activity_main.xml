@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:hint="Enter your Email"
         android:textColor="#767171" />
 
@@ -60,9 +60,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/google"
-        android:textColor="@color/white"
         android:text="Google"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="60px" />
 
 </LinearLayout>
