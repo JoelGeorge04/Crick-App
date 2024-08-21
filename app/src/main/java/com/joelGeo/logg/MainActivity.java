@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
   String userName=p.getString("user",null);
   if(userName!=null)
   {
-   Intent i=new Intent(getApplicationContext(), Project.class);
+   Intent i=new Intent(getApplicationContext(), HomePage.class);
    startActivity(i);
   }
   btnSignIn=findViewById(R.id.google);
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
                       loading.dismiss();
 
-                      Intent intent =new Intent(MainActivity.this,Project.class);
+                      Intent intent =new Intent(MainActivity.this,HomePage.class);
                       startActivity(intent);
                       finish();
 
