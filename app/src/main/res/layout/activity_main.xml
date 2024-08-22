@@ -7,7 +7,6 @@
     android:padding="35px">
 
 
-
     <TextView
         android:layout_width="99dp"
         android:layout_height="98dp"
@@ -29,14 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Enter your Email"
-        android:textColor="#767171" />
+        android:textColor="#B3A3A3" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10px"
         android:text="Password"
-        android:textColor="#EDE3E3" />
+        android:textColor="#FAFAFA" />
 
     <EditText
         android:id="@+id/pass"
