@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10px"
-        android:text="Team 1:-"
+        android:text="Team 2:-"
         android:textSize="60px"
         android:textColor="#040303" />
 
@@ -80,20 +80,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radioBatsman"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Batsman"
-        android:textColor="@color/black"
-        android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radioBatsman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batsman"
+            android:textColor="@color/black"
+            android:checked="true"/>
 
-    <RadioButton
-        android:id="@+id/radioBowler"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bowler"/>
+        <RadioButton
+            android:id="@+id/radioBowler"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bowler"/>
     </RadioGroup>
 
     <Button

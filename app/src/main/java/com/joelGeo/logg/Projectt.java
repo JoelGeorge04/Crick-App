@@ -23,9 +23,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.joelGeo.logg.databinding.ActivityMainBinding;
 import com.joelGeo.logg.databinding.ActivityProjectBinding;
-public class Project extends AppCompatActivity {
+import com.joelGeo.logg.databinding.ActivityProjecttBinding;
 
-    ActivityProjectBinding binding;
+public class Projectt extends AppCompatActivity {
+
+    ActivityProjecttBinding binding;
     String name, age, dob, role;
     FirebaseDatabase db;
     DatabaseReference reference;
@@ -34,8 +36,8 @@ public class Project extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_project);
-        binding = ActivityProjectBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_projectt);
+        binding = ActivityProjecttBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         // Get the RadioGroup and set an onCheckedChangeListener
@@ -44,9 +46,9 @@ public class Project extends AppCompatActivity {
                 RadioButton selectedRole = findViewById(checkedId);
                 if (selectedRole != null) {
                     role = selectedRole.getText().toString();
-                    Log.d("Project", "Selected role: " + role);
+                    Log.d("Projectt", "Selected role: " + role);
                 } else {
-                    Log.d("Project", "No role selected or invalid ID");
+                    Log.d("Projectt", "No role selected or invalid ID");
                 }
             }
 
@@ -61,9 +63,9 @@ public class Project extends AppCompatActivity {
                 dob = binding.dob.getText().toString();
 
                 if (!name.isEmpty() && !age.isEmpty() && !dob.isEmpty() && role != null) {
-                    users u = new users(name, age, dob, role);
+                    userss u = new userss(name, age, dob, role);
                     db = FirebaseDatabase.getInstance();
-                    reference = db.getReference("Team1"); // Changed the path to "users"
+                    reference = db.getReference("Team2"); // Changed the path to "users"
                     reference.child(name).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
@@ -71,11 +73,11 @@ public class Project extends AppCompatActivity {
                             binding.age.setText("");
                             binding.dob.setText("");
 
-                            Toast.makeText(Project.this, "Updated to Database!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Projectt.this, "Updated to Database!", Toast.LENGTH_LONG).show();
                         }
                     });
                 } else {
-                    Toast.makeText(Project.this, "Please fill all the fields!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Projectt.this, "Please fill all the fields!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
