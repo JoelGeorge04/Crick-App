@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10px"
         android:text="Name:"
+        android:textSize="42px"
         android:textColor="#040303" />
 
     <EditText
@@ -28,22 +29,23 @@
         android:layout_height="wrap_content"
         android:hint="Enter your name"
         android:inputType="text"
-        android:textColorHint="@color/black"
+        android:textColorHint="#6A6565"
         android:textColor="@color/black" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10px"
-        android:text="Age"
+        android:text="Enter the number of 6's"
+        android:textSize="42px"
         android:textColor="#040303" />
 
     <EditText
-        android:id="@+id/age"
+        android:id="@+id/sixs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your age"
-        android:textColorHint="@color/black"
+        android:hint="Number of 6 "
+        android:textColorHint="#6A6565"
         android:inputType="number"
         android:textColor="@color/black" />
 
@@ -53,17 +55,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10px"
-        android:text="D.O.B"
+        android:textSize="42px"
+        android:text="Enter the number of 4's"
         android:textColor="#040303" />
 
     <EditText
-        android:id="@+id/dob"
+        android:id="@+id/fours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your D.O.B"
-        android:textColorHint="@color/black"
+        android:hint="Number of 4 "
+        android:textColorHint="#6A6565"
         android:inputType="date"
         android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:text="Enter the number of Wickets's"
+        android:textSize="42px"
+        android:textColor="#040303" />
+
+    <EditText
+        android:id="@+id/wickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Wickets"
+        android:textColorHint="#6A6565"
+        android:inputType="date"
+        android:textColor="@color/black" />
+
 
     <TextView
         android:layout_width="wrap_content"

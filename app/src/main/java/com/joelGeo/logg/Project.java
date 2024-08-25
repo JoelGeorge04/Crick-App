@@ -1,10 +1,8 @@
 package com.joelGeo.logg;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -12,21 +10,16 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.joelGeo.logg.databinding.ActivityMainBinding;
 import com.joelGeo.logg.databinding.ActivityProjectBinding;
 public class Project extends AppCompatActivity {
 
     ActivityProjectBinding binding;
-    String name, age, dob, role;
+    String name, sixs, fours, role,wickets;
     FirebaseDatabase db;
     DatabaseReference reference;
 
@@ -57,19 +50,21 @@ public class Project extends AppCompatActivity {
             public void onClick(View view) {
 
                 name = binding.nam.getText().toString();
-                age = binding.age.getText().toString();
-                dob = binding.dob.getText().toString();
+                sixs = binding.sixs.getText().toString();
+                fours = binding.fours.getText().toString();
+                wickets = binding.wickets.getText().toString();
 
-                if (!name.isEmpty() && !age.isEmpty() && !dob.isEmpty() && role != null) {
-                    users u = new users(name, age, dob, role);
+                if (!name.isEmpty() && !sixs.isEmpty() && !fours.isEmpty() && role != null) {
+                    users u = new users(name, sixs, fours, role, wickets);
                     db = FirebaseDatabase.getInstance();
                     reference = db.getReference("Team1"); // Changed the path to "users"
                     reference.child(name).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             binding.nam.setText("");
-                            binding.age.setText("");
-                            binding.dob.setText("");
+                            binding.sixs.setText("");
+                            binding.fours.setText("");
+                            binding.wickets.setText("");
 
                             Toast.makeText(Project.this, "Updated to Database!", Toast.LENGTH_LONG).show();
                         }

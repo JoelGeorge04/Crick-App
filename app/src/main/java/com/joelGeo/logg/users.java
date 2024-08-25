@@ -2,16 +2,26 @@ package com.joelGeo.logg;
 
 public class users {
 
-    String name, age, dob,role;
+    String name, sixs, fours,role,wickets;
 
     public users() {
     }
 
-    public users(String name, String age, String dob, String role) {
+    public users(String name, String sixs, String fours, String role , String wickets) {
         this.name = name;
-        this.age = age;
-        this.dob = dob;
+        this.sixs = sixs;
+        this.fours = fours;
         this.role = role;
+        this.wickets = wickets;
+
+    }
+
+    public String getWickets() {
+        return wickets;
+    }
+
+    public void setWickets(String wickets) {
+        this.wickets = wickets;
     }
 
     public String getName() {
@@ -22,20 +32,20 @@ public class users {
         this.name = name;
     }
 
-    public String getAge() {
-        return age;
+    public String getSixs() {
+        return sixs;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setSixs(String sixs) {
+        this.sixs = sixs;
     }
 
-    public String getDob() {
-        return dob;
+    public String getFours() {
+        return fours;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public void setFours(String fours) {
+        this.fours = fours;
     }
 
     public String getRole() {
