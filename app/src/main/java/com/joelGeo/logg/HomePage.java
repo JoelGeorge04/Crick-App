@@ -37,7 +37,7 @@ public class HomePage extends AppCompatActivity {
         });
 
         flipButton = findViewById(R.id.flipButton);
-        resultTextView = findViewById(R.id.resultTextView);
+        resultTextView = findViewById(R.id.toss);
 
         flipButton.setOnClickListener(v -> {
             if (!isFlipping) {

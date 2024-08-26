@@ -101,20 +101,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radioBatsman"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Batsman"
-        android:textColor="@color/black"
-        android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radioBatsman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batsman"
+            android:textColor="@color/black"/>
 
-    <RadioButton
-        android:id="@+id/radioBowler"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bowler"/>
+        <RadioButton
+            android:id="@+id/radioBowler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bowler"
+            android:textColor="@color/black"/>
     </RadioGroup>
 
     <Button

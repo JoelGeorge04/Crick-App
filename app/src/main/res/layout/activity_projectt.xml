@@ -13,8 +13,6 @@
         android:text="Team 2:-"
         android:textSize="60px"
         android:textColor="#040303" />
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +63,7 @@
         android:layout_height="wrap_content"
         android:hint="Number of 4 "
         android:textColorHint="#6A6565"
-        android:inputType="date"
+        android:inputType="number"
         android:textColor="@color/black" />
 
     <TextView
@@ -82,7 +80,7 @@
         android:layout_height="wrap_content"
         android:hint="Number of Wickets"
         android:textColorHint="#6A6565"
-        android:inputType="date"
+        android:inputType="number"
         android:textColor="@color/black" />
 
 
@@ -106,15 +104,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Batsman"
-            android:textColor="@color/black"
-            android:checked="true"/>
+            android:textColor="@color/black"/>
 
         <RadioButton
             android:id="@+id/radioBowler"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bowler"/>
+            android:text="Bowler"
+            android:textColor="@color/black"/>
     </RadioGroup>
 
     <Button

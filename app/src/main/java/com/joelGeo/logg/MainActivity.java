@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
  int RC_SIGN_IN =30;
  Dialog loading;
 
-  @Override
+ @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
 
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
    @Override
    public void onClick(View view) {
 
-      signIn();
+    signIn();
    }
   });
 
@@ -113,10 +113,10 @@ public class MainActivity extends AppCompatActivity {
 
  private void signIn() {
 
-   Intent intent = googleSignInClient.getSignInIntent();
-    startActivityForResult(intent,RC_SIGN_IN);
+  Intent intent = googleSignInClient.getSignInIntent();
+  startActivityForResult(intent,RC_SIGN_IN);
 
-  }
+ }
 
  @Override
  protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -124,12 +124,12 @@ public class MainActivity extends AppCompatActivity {
   Task<GoogleSignInAccount> task=GoogleSignIn.getSignedInAccountFromIntent(data);
 
 
-     try {
-      GoogleSignInAccount account= task.getResult(ApiException.class);
-      firebaseAuth(account.getIdToken());
-     } catch (ApiException e) {
-         Toast.makeText(this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
-     }
+  try {
+   GoogleSignInAccount account= task.getResult(ApiException.class);
+   firebaseAuth(account.getIdToken());
+  } catch (ApiException e) {
+   Toast.makeText(this,e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
+  }
 
 
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
  private void firebaseAuth(String idToken) {
 
-   loading.show();
+  loading.show();
 
   AuthCredential credential= GoogleAuthProvider.getCredential(idToken,null);
   auth.signInWithCredential(credential)
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onComplete(@NonNull Task<AuthResult> task) {
 
-              Toast.makeText(MainActivity.this,"        Welcome   \n 'Account Created' ",Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,"        Welcome   \n 'Account Created' ",Toast.LENGTH_LONG).show();
             FirebaseUser user= auth.getCurrentUser();
             HashMap<String,Object> map = new HashMap<>();
             map.put("name",user.getDisplayName());
@@ -168,5 +168,5 @@ public class MainActivity extends AppCompatActivity {
            }
           });
 
-  }
+ }
 }
