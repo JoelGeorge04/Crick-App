@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E0DBDB"
+    android:background="#858181"
     android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:text="Start Game"
-        android:textSize="90px"
-        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="100dp"
         android:layout_height="wrap_content"/>
@@ -21,9 +21,7 @@
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Create team1 :-" />
-
-
+        android:text="Create team1" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/team2"
@@ -31,12 +29,12 @@
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Create team2 :-" />
+        android:text="Create team2" />
 
     <Button
         android:id="@+id/flipButton"
         android:layout_width="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:text="Flip Coin" />
 
@@ -45,12 +43,94 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/flipButton"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:hapticFeedbackEnabled="false"
-        android:hint="Toss status: "
-        android:textColor="#575353"
-        android:textColorHint="#575353"
+        android:text="Toss status: "
+        android:textColor="#C1BDBD"
         android:textSize="24sp" />
+
+    <!-- TableLayout for Team 1 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 1 Players"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="8dp">
+
+        <!-- Header row for Team 1 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name"
+                android:padding="8dp"
+                android:textColor="#EFEBEB"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </TableRow>
+
+        <!-- Rows for Player Data will be added dynamically -->
+    </TableLayout>
+
+    <!-- TableLayout for Team 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2 Players"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="8dp">
+
+        <!-- Header row for Team 2 -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </TableRow>
+
+        <!-- Rows for Player Data will be added dynamically -->
+    </TableLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:textSize="90px"
+        android:layout_marginTop="650px"
+        android:layout_marginLeft="220px"
+        android:text="Add match"
+        android:id="@+id/addMatch"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

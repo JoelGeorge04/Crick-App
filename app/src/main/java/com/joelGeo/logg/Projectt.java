@@ -1,50 +1,46 @@
 package com.joelGeo.logg;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.joelGeo.logg.databinding.ActivityProjectBinding;
 import com.joelGeo.logg.databinding.ActivityProjecttBinding;
 
 public class Projectt extends AppCompatActivity {
 
-    ActivityProjecttBinding binding;
-    String name, sixs, fours, role = null, wickets;
-    FirebaseDatabase db;
-    DatabaseReference reference;
+    private ActivityProjecttBinding binding;
+    private String name, sixs, fours, role, wickets;
+    private int playerIndex;
+    private TextView playerIndexTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         binding = ActivityProjecttBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Initialize Firebase Database
-        db = FirebaseDatabase.getInstance();
-        reference = db.getReference("Team1");
+        playerIndexTextView = findViewById(R.id.playerIndexTextView); // Make sure to add this TextView to your layout
+
+        // Retrieve player index from intent
+        playerIndex = getIntent().getIntExtra("playerIndex", 0);
+
+        // Display the current player index
+        playerIndexTextView.setText("Player " + (playerIndex + 1));
 
         // Get the RadioGroup and set an onCheckedChangeListener
         binding.roleRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             RadioButton selectedRole = findViewById(checkedId);
             if (selectedRole != null) {
                 role = selectedRole.getText().toString();
-                Log.d("Project", "Selected role: " + role);
             } else {
                 role = null;
-                Log.d("Project", "No role selected or invalid ID");
             }
         });
 
@@ -58,25 +54,37 @@ public class Projectt extends AppCompatActivity {
             // Validate inputs
             if (name.isEmpty() || sixs.isEmpty() || fours.isEmpty() || role == null || role.isEmpty()) {
                 Toast.makeText(Projectt.this, "Please fill all the fields and select a role!", Toast.LENGTH_SHORT).show();
-                return; // Exit the method to prevent further execution
+                return;
             }
 
-            // Create user object and save to Firebase
-            users u = new users(name, sixs, fours, role, wickets);
-            reference.child(name).setValue(u).addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    // Clear input fields and selections on success
-                    binding.nam.setText("");
-                    binding.sixs.setText("");
-                    binding.fours.setText("");
-                    binding.wickets.setText("");
-                    binding.roleRadioGroup.clearCheck(); // Clear RadioGroup selection
+            // Save data to SharedPreferences
+            SharedPreferences sharedPreferences = getSharedPreferences("TeamData", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("playerName" + (playerIndex + 4), name);
+            editor.putString("playerSixs" + (playerIndex + 4), sixs);
+            editor.putString("playerFours" + (playerIndex + 4), fours);
+            editor.putString("playerWickets" + (playerIndex + 4), wickets);
+            editor.putString("playerRole" + (playerIndex + 4), role);
+            editor.apply();
 
-                    Toast.makeText(Projectt.this, "Updated to Database!", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(Projectt.this, "Failed to update database!", Toast.LENGTH_SHORT).show();
-                }
-            });
+            // Move to next player or finish if done
+            if (playerIndex < 3) {
+                Intent intent = new Intent(Projectt.this, Projectt.class);
+                intent.putExtra("playerIndex", playerIndex + 1);
+                startActivity(intent);
+            } else {
+                Toast.makeText(Projectt.this, "Team 2 players added successfully!", Toast.LENGTH_LONG).show();
+
+                // Clear SharedPreferences for next match
+                SharedPreferences.Editor editorClear = sharedPreferences.edit();
+                editorClear.clear();
+                editorClear.apply();
+
+                // Return to HomePage
+                Intent intent = new Intent(Projectt.this, HomePage.class);
+                startActivity(intent);
+                finish();
+            }
         });
     }
 }
