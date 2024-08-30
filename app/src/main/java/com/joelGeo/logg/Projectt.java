@@ -1,24 +1,31 @@
 package com.joelGeo.logg;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.joelGeo.logg.databinding.ActivityProjectBinding;
 import com.joelGeo.logg.databinding.ActivityProjecttBinding;
 
 public class Projectt extends AppCompatActivity {
 
-    private ActivityProjecttBinding binding;
+    private @NonNull ActivityProjecttBinding binding;
     private String name, sixs, fours, role, wickets;
     private int playerIndex;
     private TextView playerIndexTextView;
+    private Button stopButton;
+    private boolean isAddingPlayers = true;
+
+    // Firebase Reference
+    private DatabaseReference team2Ref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +33,12 @@ public class Projectt extends AppCompatActivity {
         binding = ActivityProjecttBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        playerIndexTextView = findViewById(R.id.playerIndexTextView); // Make sure to add this TextView to your layout
+        playerIndexTextView = findViewById(R.id.playerIndexTextView);
+        stopButton = findViewById(R.id.stopButton);
+
+        // Initialize Firebase reference
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        team2Ref = database.getReference("match/team2");
 
         // Retrieve player index from intent
         playerIndex = getIntent().getIntExtra("playerIndex", 0);
@@ -45,6 +57,10 @@ public class Projectt extends AppCompatActivity {
         });
 
         binding.add.setOnClickListener(view -> {
+            if (!isAddingPlayers) {
+                return; // Do nothing if adding players is stopped
+            }
+
             // Retrieve input values
             name = binding.nam.getText().toString();
             sixs = binding.sixs.getText().toString();
@@ -57,28 +73,16 @@ public class Projectt extends AppCompatActivity {
                 return;
             }
 
-            // Save data to SharedPreferences
-            SharedPreferences sharedPreferences = getSharedPreferences("TeamData", MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("playerName" + (playerIndex + 4), name);
-            editor.putString("playerSixs" + (playerIndex + 4), sixs);
-            editor.putString("playerFours" + (playerIndex + 4), fours);
-            editor.putString("playerWickets" + (playerIndex + 4), wickets);
-            editor.putString("playerRole" + (playerIndex + 4), role);
-            editor.apply();
+            // Add player data to Firebase
+            addPlayerToFirebase(playerIndex);
 
             // Move to next player or finish if done
-            if (playerIndex < 3) {
+            if (playerIndex < 11) { // Allow up to 12 players
                 Intent intent = new Intent(Projectt.this, Projectt.class);
                 intent.putExtra("playerIndex", playerIndex + 1);
                 startActivity(intent);
             } else {
                 Toast.makeText(Projectt.this, "Team 2 players added successfully!", Toast.LENGTH_LONG).show();
-
-                // Clear SharedPreferences for next match
-                SharedPreferences.Editor editorClear = sharedPreferences.edit();
-                editorClear.clear();
-                editorClear.apply();
 
                 // Return to HomePage
                 Intent intent = new Intent(Projectt.this, HomePage.class);
@@ -86,5 +90,30 @@ public class Projectt extends AppCompatActivity {
                 finish();
             }
         });
+
+        stopButton.setOnClickListener(view -> {
+            isAddingPlayers = false; // Stop adding players
+            Toast.makeText(Projectt.this, "Stopped adding players.", Toast.LENGTH_SHORT).show();
+
+            // Optionally, redirect to HomePage or another activity
+            Intent intent = new Intent(Projectt.this, HomePage.class);
+            startActivity(intent);
+            finish();
+        });
+    }
+
+    private void addPlayerToFirebase(int playerIndex) {
+        // Create a map of the player's data
+        String playerId = "player" + (playerIndex + 1);
+        userss player = new userss(name, sixs, fours, wickets, role);
+
+        // Add the player to Firebase under match/team2/playerIndex
+        team2Ref.child(playerId).setValue(player)
+                .addOnSuccessListener(aVoid -> {
+                    Toast.makeText(Projectt.this, "Player added to Firebase successfully!", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(Projectt.this, "Failed to add player to Firebase!", Toast.LENGTH_SHORT).show();
+                });
     }
 }

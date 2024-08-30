@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Logg"
+rootProject.name = "Crick App"
 include(":app")
  

@@ -123,6 +123,8 @@
             android:textColor="@color/black"/>
     </RadioGroup>
 
+
+
     <Button
         android:id="@+id/add"
         android:layout_width="wrap_content"
@@ -130,5 +132,13 @@
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
         android:text="Add Player" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Adding Players"
+        android:layout_below="@id/add"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>

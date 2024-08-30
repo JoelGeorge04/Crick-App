@@ -3,20 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#858181"
+    android:background="#0B0800"
     android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:text="Start Game"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textColor="@color/white"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="110dp"
         android:layout_height="wrap_content"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/team1"
+        android:textSize="50px"
         android:layout_width="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
@@ -25,6 +26,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/team2"
+        android:textSize="50px"
         android:layout_width="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
@@ -35,6 +37,7 @@
         android:id="@+id/flipButton"
         android:layout_width="wrap_content"
         android:layout_marginTop="20dp"
+        android:textSize="50px"
         android:layout_height="wrap_content"
         android:text="Flip Coin" />
 
@@ -47,81 +50,8 @@
         android:gravity="center"
         android:text="Toss status: "
         android:textColor="#C1BDBD"
-        android:textSize="24sp" />
+        android:textSize="70px" />
 
-    <!-- TableLayout for Team 1 -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Team 1 Players"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"/>
-
-    <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:layout_marginTop="8dp">
-
-        <!-- Header row for Team 1 -->
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Player Name"
-                android:padding="8dp"
-                android:textColor="#EFEBEB"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Role"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:gravity="center"/>
-        </TableRow>
-
-        <!-- Rows for Player Data will be added dynamically -->
-    </TableLayout>
-
-    <!-- TableLayout for Team 2 -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Team 2 Players"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"/>
-
-    <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:layout_marginTop="8dp">
-
-        <!-- Header row for Team 2 -->
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Player Name"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Role"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:gravity="center"/>
-        </TableRow>
-
-        <!-- Rows for Player Data will be added dynamically -->
-    </TableLayout>
 
 
     <Button
