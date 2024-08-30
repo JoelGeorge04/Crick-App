@@ -1,23 +1,22 @@
 package com.joelGeo.logg;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.joelGeo.logg.databinding.ActivityProjectBinding;
 import com.joelGeo.logg.databinding.ActivityProjecttBinding;
 
 public class Projectt extends AppCompatActivity {
 
-    private @NonNull ActivityProjecttBinding binding;
+    private ActivityProjecttBinding binding;
     private String name, sixs, fours, role, wickets;
     private int playerIndex;
     private TextView playerIndexTextView;
@@ -73,8 +72,8 @@ public class Projectt extends AppCompatActivity {
                 return;
             }
 
-            // Add player data to Firebase
-            addPlayerToFirebase(playerIndex);
+            // Save player data to SharedPreferences
+            savePlayerData(playerIndex);
 
             // Move to next player or finish if done
             if (playerIndex < 11) { // Allow up to 12 players
@@ -102,18 +101,11 @@ public class Projectt extends AppCompatActivity {
         });
     }
 
-    private void addPlayerToFirebase(int playerIndex) {
-        // Create a map of the player's data
-        String playerId = "player" + (playerIndex + 1);
-        userss player = new userss(name, sixs, fours, wickets, role);
-
-        // Add the player to Firebase under match/team2/playerIndex
-        team2Ref.child(playerId).setValue(player)
-                .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(Projectt.this, "Player added to Firebase successfully!", Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(Projectt.this, "Failed to add player to Firebase!", Toast.LENGTH_SHORT).show();
-                });
+    private void savePlayerData(int playerIndex) {
+        SharedPreferences sharedPreferences = getSharedPreferences("Team2Players", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        String playerData = name + "," + sixs + "," + fours + "," + wickets + "," + role;
+        editor.putString("player" + (playerIndex + 1), playerData);
+        editor.apply();
     }
 }

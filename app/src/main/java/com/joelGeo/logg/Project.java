@@ -13,6 +13,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.joelGeo.logg.databinding.ActivityProjectBinding;
 
+import android.content.SharedPreferences;
+// Other imports
+
 public class Project extends AppCompatActivity {
 
     private ActivityProjectBinding binding;
@@ -71,8 +74,8 @@ public class Project extends AppCompatActivity {
                 return;
             }
 
-            // Add player data to Firebase
-            addPlayerToFirebase(playerIndex);
+            // Save player data to SharedPreferences
+            savePlayerData(playerIndex);
 
             // Move to next player or finish if done
             if (playerIndex < 11) { // Allow up to 12 players
@@ -100,18 +103,12 @@ public class Project extends AppCompatActivity {
         });
     }
 
-    private void addPlayerToFirebase(int playerIndex) {
-        // Create a map of the player's data
-        String playerId = "player" + (playerIndex + 1);
-        users player = new users(name, sixs, fours, wickets, role);
-
-        // Add the player to Firebase under match/team1/playerIndex
-        team1Ref.child(playerId).setValue(player)
-                .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(Project.this, "Player added to Firebase successfully!", Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(Project.this, "Failed to add player to Firebase!", Toast.LENGTH_SHORT).show();
-                });
+    private void savePlayerData(int playerIndex) {
+        SharedPreferences sharedPreferences = getSharedPreferences("Team1Players", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        String playerData = name + "," + sixs + "," + fours + "," + wickets + "," + role;
+        editor.putString("player" + (playerIndex + 1), playerData);
+        editor.apply();
     }
 }
+
