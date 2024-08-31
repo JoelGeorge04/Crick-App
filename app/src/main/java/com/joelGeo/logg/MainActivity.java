@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
   String userName=p.getString("user",null);
   if(userName!=null)
   {
-   Intent i=new Intent(getApplicationContext(), HomePage.class);
+   Intent i=new Intent(getApplicationContext(), Choice.class);
    startActivity(i);
   }
   btnSignIn=findViewById(R.id.google);
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
      SharedPreferences.Editor editor = p.edit();
      editor.putString("user", "admin");
      editor.apply();
-     Intent i = new Intent(getApplicationContext(), Project.class);
+     Intent i = new Intent(getApplicationContext(), Choice.class);
      startActivity(i);
     } else if (userName.equals("") || passw.equals("")) {
      Toast.makeText(getApplicationContext(), "Enter the field values !!", Toast.LENGTH_LONG).show();
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
                       loading.dismiss();
 
-                      Intent intent =new Intent(MainActivity.this,HomePage.class);
+                      Intent intent =new Intent(MainActivity.this,Choice.class);
                       startActivity(intent);
                       finish();
 

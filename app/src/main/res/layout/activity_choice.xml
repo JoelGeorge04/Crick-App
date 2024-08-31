@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#070707">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-500px"
+        android:layout_marginBottom="555dp"
+        android:text="Welcome!"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <!-- Start Match Button -->
+    <Button
+        android:id="@+id/startMatchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#282525"
+        android:padding="20dp"
+        android:text="Start Match"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <!-- View Match Results Button -->
+    <Button
+        android:id="@+id/viewResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startMatchButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#282525"
+        android:padding="30dp"
+        android:layout_marginBottom="120dp"
+        android:text="View Match Results"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

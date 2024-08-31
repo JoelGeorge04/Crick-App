@@ -3,11 +3,13 @@ package com.joelGeo.logg;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -21,7 +23,7 @@ public class HomePage extends AppCompatActivity {
     private Button team1Button, team2Button, flipButton, addMatchButton;
     private TextView resultTextView;
     private boolean isFlipping = false;
-
+    AppCompatButton back;
     // Firebase References
     private DatabaseReference databaseRef;
     private String tossResult;
@@ -31,6 +33,16 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        back=(AppCompatButton)findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Choice.class);
+                startActivity(i);
+            }
+        });
 
         // Initialize UI elements
         team1Button = findViewById(R.id.team1);
