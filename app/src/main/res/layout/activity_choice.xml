@@ -10,11 +10,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-500px"
-        android:layout_marginBottom="555dp"
+        android:layout_marginTop="-200dp"
         android:text="Welcome!"
         android:textColor="@android:color/white"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 
     <!-- Start Match Button -->
     <Button
@@ -22,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#282525"
         android:padding="20dp"
         android:text="Start Match"
@@ -34,11 +33,11 @@
         android:id="@+id/viewResultsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/startMatchButton"
         android:layout_centerHorizontal="true"
+        android:layout_below="@id/startMatchButton"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#282525"
         android:padding="30dp"
-        android:layout_marginBottom="120dp"
         android:text="View Match Results"
         android:textColor="@android:color/white"
         android:textSize="20sp" />

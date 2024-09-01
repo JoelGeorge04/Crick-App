@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,26 +25,18 @@ public class HomePage extends AppCompatActivity {
     private Button team1Button, team2Button, flipButton, addMatchButton;
     private TextView resultTextView;
     private boolean isFlipping = false;
-    AppCompatButton back;
-    // Firebase References
-    private DatabaseReference databaseRef;
+    private RadioGroup winnerRadioGroup;
+    private AppCompatButton back;
     private String tossResult;
     private String currentMatchKey;
+
+    // Firebase Reference
+    private DatabaseReference databaseRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
-        back=(AppCompatButton)findViewById(R.id.back);
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Choice.class);
-                startActivity(i);
-            }
-        });
 
         // Initialize UI elements
         team1Button = findViewById(R.id.team1);
@@ -50,10 +44,17 @@ public class HomePage extends AppCompatActivity {
         flipButton = findViewById(R.id.flipButton);
         addMatchButton = findViewById(R.id.addMatch);
         resultTextView = findViewById(R.id.toss);
+        winnerRadioGroup = findViewById(R.id.winnerRadioGroup);
+        back = findViewById(R.id.back);
 
         // Initialize Firebase reference
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         databaseRef = database.getReference("match");
+
+        back.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(), Choice.class);
+            startActivity(i);
+        });
 
         // Handle team buttons
         team1Button.setOnClickListener(v -> {
@@ -79,10 +80,13 @@ public class HomePage extends AppCompatActivity {
         addMatchButton.setOnClickListener(v -> {
             if (tossResult == null || tossResult.isEmpty()) {
                 Toast.makeText(HomePage.this, "Please flip the coin to add toss result!", Toast.LENGTH_SHORT).show();
+            } else if (winnerRadioGroup.getCheckedRadioButtonId() == -1) {
+                Toast.makeText(HomePage.this, "Please select the winning team!", Toast.LENGTH_SHORT).show();
             } else {
                 generateNewMatchKey();
                 addTossResultToFirebase();
                 addTeamDataToFirebase();
+                addWinningTeamToFirebase();
                 clearTossResult(); // Clear the toss result after adding match
                 clearLocalData();  // Clear local data from SharedPreferences
             }
@@ -128,7 +132,6 @@ public class HomePage extends AppCompatActivity {
 
     private void addTeamDataToFirebase() {
         if (currentMatchKey != null) {
-            // Retrieve player data from SharedPreferences
             SharedPreferences team1Prefs = getSharedPreferences("Team1Players", MODE_PRIVATE);
             SharedPreferences team2Prefs = getSharedPreferences("Team2Players", MODE_PRIVATE);
 
@@ -179,13 +182,35 @@ public class HomePage extends AppCompatActivity {
         }
     }
 
+    private void addWinningTeamToFirebase() {
+        if (currentMatchKey != null) {
+            String winningTeam;
+            int selectedWinnerId = winnerRadioGroup.getCheckedRadioButtonId();
+            if (selectedWinnerId == R.id.radioTeam1) {
+                winningTeam = "Team 1";
+            } else if (selectedWinnerId == R.id.radioTeam2) {
+                winningTeam = "Team 2";
+            } else {
+                winningTeam = "No team selected";
+            }
+
+            DatabaseReference winnerRef = databaseRef.child(currentMatchKey).child("winner");
+            winnerRef.setValue(winningTeam)
+                    .addOnSuccessListener(aVoid -> {
+                        Toast.makeText(HomePage.this, "Winning team added to Firebase successfully!", Toast.LENGTH_SHORT).show();
+                    })
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(HomePage.this, "Failed to add winning team to Firebase!", Toast.LENGTH_SHORT).show();
+                    });
+        }
+    }
+
     private void clearTossResult() {
         tossResult = null;
         resultTextView.setText("");
     }
 
     private void clearLocalData() {
-        // Clear SharedPreferences data
         SharedPreferences team1Prefs = getSharedPreferences("Team1Players", MODE_PRIVATE);
         SharedPreferences.Editor team1Editor = team1Prefs.edit();
         team1Editor.clear();

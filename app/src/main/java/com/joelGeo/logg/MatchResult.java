@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.cardview.widget.CardView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -21,11 +22,19 @@ public class MatchResult extends AppCompatActivity {
 
     private RelativeLayout relativeLayout;
     private DatabaseReference matchDatabaseRef;
+    private AppCompatButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_match_result);
+
+        back = findViewById(R.id.back);
+
+        back.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(), Choice.class);
+            startActivity(i);
+        });
 
         // Reference to the RelativeLayout
         relativeLayout = findViewById(R.id.relativeLayout);
@@ -34,43 +43,23 @@ public class MatchResult extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         matchDatabaseRef = database.getReference("match");
 
-        // Add static card views for Match 1 and Match 2
-        setupStaticCardViews();
-
         // Fetch data from Firebase and add dynamic card views
         fetchMatchDataFromFirebase();
-    }
-
-    private void setupStaticCardViews() {
-        // Setting up click listeners for static CardView1 and CardView2
-        CardView cardView1 = findViewById(R.id.cardView1);
-        CardView cardView2 = findViewById(R.id.cardView2);
-
-        cardView1.setOnClickListener(v -> {
-            Intent intent = new Intent(MatchResult.this, MatchStatusPage.class);
-            intent.putExtra("matchNumber", 1); // Send match number to MatchStatusPage
-            startActivity(intent);
-        });
-
-        cardView2.setOnClickListener(v -> {
-            Intent intent = new Intent(MatchResult.this, MatchStatusPage.class);
-            intent.putExtra("matchNumber", 2); // Send match number to MatchStatusPage
-            startActivity(intent);
-        });
     }
 
     private void fetchMatchDataFromFirebase() {
         matchDatabaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                int matchCount = 3; // Starting index for dynamically added matches
+                int matchCount = 1; // Starting index for dynamically added matches
 
                 for (DataSnapshot matchSnapshot : dataSnapshot.getChildren()) {
                     String matchKey = matchSnapshot.getKey();
                     String tossResult = matchSnapshot.child("toss").getValue(String.class);
+                    String matchResult = matchSnapshot.child("winner").getValue(String.class); // Retrieve match result
 
                     // Add a new card view for each match in Firebase
-                    addDynamicCardView(matchCount, matchKey, tossResult);
+                    addDynamicCardView(matchCount, matchKey, tossResult, matchResult);
 
                     matchCount++;
                 }
@@ -83,7 +72,7 @@ public class MatchResult extends AppCompatActivity {
         });
     }
 
-    private void addDynamicCardView(int matchNumber, String matchKey, String tossResult) {
+    private void addDynamicCardView(int matchNumber, String matchKey, String tossResult, String matchResult) {
         // Create a new CardView dynamically
         CardView cardView = new CardView(this);
         cardView.setId(View.generateViewId());
@@ -94,8 +83,8 @@ public class MatchResult extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT);
 
         // Place the CardView below the last element
-        if (matchNumber == 3) {
-            params.addRule(RelativeLayout.BELOW, R.id.cardView2); // First dynamic card below CardView2
+        if (matchNumber == 1) {
+            params.addRule(RelativeLayout.BELOW, R.id.matchResultTitle); // First dynamic card below the title
         } else {
             params.addRule(RelativeLayout.BELOW, relativeLayout.getChildAt(relativeLayout.getChildCount() - 1).getId());
         }
@@ -104,13 +93,14 @@ public class MatchResult extends AppCompatActivity {
         cardView.setLayoutParams(params);
         cardView.setCardElevation(8f);
         cardView.setRadius(12f);
+        cardView.setCardBackgroundColor(getResources().getColor(R.color.white)); // Set CardView background to white
 
         // Add TextView inside the CardView to display match info
         TextView textView = new TextView(this);
-        textView.setText("Match " + matchNumber + ": " + tossResult);
+        textView.setText("Match " + matchNumber + "\nWinner: " + matchResult + "\nToss: " + tossResult);
         textView.setTextSize(18);
         textView.setPadding(20, 20, 20, 20);
-        textView.setTextColor(getResources().getColor(R.color.black));
+        textView.setTextColor(getResources().getColor(R.color.black)); // Set text color to black
 
         cardView.addView(textView);
 

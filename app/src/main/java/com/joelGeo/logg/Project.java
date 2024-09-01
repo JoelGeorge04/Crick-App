@@ -19,7 +19,7 @@ import android.content.SharedPreferences;
 public class Project extends AppCompatActivity {
 
     private ActivityProjectBinding binding;
-    private String name, sixs, fours, role, wickets;
+    private String name, sixs, fours, role, wickets,wonStatus;
     private int playerIndex;
     private TextView playerIndexTextView;
     private Button stopButton;
