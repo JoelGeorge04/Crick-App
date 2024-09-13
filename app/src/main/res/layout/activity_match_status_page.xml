@@ -1,11 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MatchStatusPage">
+    android:background="#0B0B0B"
+    android:padding="16dp">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- ScrollView to allow scrolling of the team details -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/matchResultTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match Details"
+                android:textSize="42sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" />
+
+            <!-- Result TextView for Toss and Winning Team Information -->
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toss: \nWinner: "
+                android:textSize="24sp"
+                android:textColor="#FFFCFC"
+                android:padding="8dp"
+                android:layout_below="@id/matchResultTitle"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/team1Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 1 Players"
+                android:textSize="32sp"
+                android:textColor="#FFFCFC"
+                android:padding="8dp"
+                android:layout_below="@id/resultTextView"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/team1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/team1Label"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/team2Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 2 Players"
+                android:textSize="32sp"
+                android:textColor="#FFFCFC"
+                android:padding="8dp"
+                android:layout_below="@id/team1Layout"
+                android:layout_marginTop="30dp" />
+
+            <LinearLayout
+                android:id="@+id/team2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/team2Label"
+                android:layout_marginTop="16dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Back Button Fixed at Bottom -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20sp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

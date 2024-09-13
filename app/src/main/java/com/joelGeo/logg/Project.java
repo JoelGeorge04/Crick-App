@@ -1,6 +1,7 @@
 package com.joelGeo.logg;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -13,13 +14,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.joelGeo.logg.databinding.ActivityProjectBinding;
 
-import android.content.SharedPreferences;
-// Other imports
-
 public class Project extends AppCompatActivity {
 
     private ActivityProjectBinding binding;
-    private String name, sixs, fours, role, wickets,wonStatus;
+    private String name, sixs, fours, role, wickets;
     private int playerIndex;
     private TextView playerIndexTextView;
     private Button stopButton;
@@ -82,6 +80,7 @@ public class Project extends AppCompatActivity {
                 Intent intent = new Intent(Project.this, Project.class);
                 intent.putExtra("playerIndex", playerIndex + 1);
                 startActivity(intent);
+                finish(); // Ensure to finish the current activity to prevent multiple instances
             } else {
                 Toast.makeText(Project.this, "Team 1 players added successfully!", Toast.LENGTH_LONG).show();
 
@@ -93,13 +92,26 @@ public class Project extends AppCompatActivity {
         });
 
         stopButton.setOnClickListener(view -> {
-            isAddingPlayers = false; // Stop adding players
-            Toast.makeText(Project.this, "Stopped adding players.", Toast.LENGTH_SHORT).show();
+            if (isAddingPlayers) {
+                // Save the current player data if adding players is stopped
+                name = binding.nam.getText().toString();
+                sixs = binding.sixs.getText().toString();
+                fours = binding.fours.getText().toString();
+                wickets = binding.wickets.getText().toString();
 
-            // Optionally, redirect to HomePage or another activity
-            Intent intent = new Intent(Project.this, HomePage.class);
-            startActivity(intent);
-            finish();
+                // Validate inputs before saving
+                if (!name.isEmpty() && !sixs.isEmpty() && !fours.isEmpty() && role != null && !role.isEmpty()) {
+                    savePlayerData(playerIndex);
+                }
+
+                isAddingPlayers = false; // Stop adding players
+                Toast.makeText(Project.this, "Stopped adding players.", Toast.LENGTH_SHORT).show();
+
+                // Redirect to HomePage or another activity
+                Intent intent = new Intent(Project.this, HomePage.class);
+                startActivity(intent);
+                finish();
+            }
         });
     }
 
@@ -111,4 +123,3 @@ public class Project extends AppCompatActivity {
         editor.apply();
     }
 }
-

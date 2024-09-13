@@ -80,6 +80,7 @@ public class Projectt extends AppCompatActivity {
                 Intent intent = new Intent(Projectt.this, Projectt.class);
                 intent.putExtra("playerIndex", playerIndex + 1);
                 startActivity(intent);
+                finish(); // Ensure to finish the current activity to prevent multiple instances
             } else {
                 Toast.makeText(Projectt.this, "Team 2 players added successfully!", Toast.LENGTH_LONG).show();
 
@@ -91,13 +92,26 @@ public class Projectt extends AppCompatActivity {
         });
 
         stopButton.setOnClickListener(view -> {
-            isAddingPlayers = false; // Stop adding players
-            Toast.makeText(Projectt.this, "Stopped adding players.", Toast.LENGTH_SHORT).show();
+            if (isAddingPlayers) {
+                // Save the current player data if adding players is stopped
+                name = binding.nam.getText().toString();
+                sixs = binding.sixs.getText().toString();
+                fours = binding.fours.getText().toString();
+                wickets = binding.wickets.getText().toString();
 
-            // Optionally, redirect to HomePage or another activity
-            Intent intent = new Intent(Projectt.this, HomePage.class);
-            startActivity(intent);
-            finish();
+                // Validate inputs before saving
+                if (!name.isEmpty() && !sixs.isEmpty() && !fours.isEmpty() && role != null && !role.isEmpty()) {
+                    savePlayerData(playerIndex);
+                }
+
+                isAddingPlayers = false; // Stop adding players
+                Toast.makeText(Projectt.this, "Stopped adding players.", Toast.LENGTH_SHORT).show();
+
+                // Redirect to HomePage or another activity
+                Intent intent = new Intent(Projectt.this, HomePage.class);
+                startActivity(intent);
+                finish();
+            }
         });
     }
 
