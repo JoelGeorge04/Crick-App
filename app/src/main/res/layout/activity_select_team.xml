@@ -2,13 +2,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="#070707">
+    android:background="@color/black">
 
     <!-- ScrollView to handle scrollable content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/tossButtonContainer"
         android:layout_alignParentTop="true">
 
         <!-- Content inside the ScrollView -->
@@ -16,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="100dp"> <!-- Padding to avoid overlap with the Toss button -->
+            android:paddingBottom="100dp"> <!-- Padding to avoid overlap with the buttons -->
 
             <!-- Header Text -->
             <TextView
@@ -26,9 +25,10 @@
                 android:textColor="@android:color/white"
                 android:textSize="35sp"
                 android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"/>
 
+            <!-- Team 1 Player Details -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,10 +38,8 @@
                 android:textSize="25sp"
                 android:padding="10px"
                 android:layout_marginTop="30dp"
-                android:layout_gravity="center_horizontal"
                 android:textStyle="bold"/>
 
-            <!-- Number of Players for Team 1 -->
             <TextView
                 android:id="@+id/team1PlayersTextView"
                 android:layout_width="wrap_content"
@@ -63,7 +61,7 @@
                 android:textColor="#000000"
                 android:textSize="18sp"/>
 
-            <!-- Separation between Team 1 and Team 2 -->
+            <!-- Team 2 Player Details -->
             <TextView
                 android:id="@+id/separationTextView"
                 android:layout_width="match_parent"
@@ -74,10 +72,8 @@
                 android:textColor="@android:color/white"
                 android:textSize="25sp"
                 android:layout_marginTop="30dp"
-                android:layout_gravity="center_horizontal"
                 android:textStyle="bold"/>
 
-            <!-- Number of Players for Team 2 -->
             <TextView
                 android:id="@+id/team2PlayersTextView"
                 android:layout_width="wrap_content"
@@ -99,61 +95,71 @@
                 android:textColor="#000000"
                 android:textSize="18sp"/>
 
-            <!-- Container for dynamically added player input fields -->
+            <!-- Text Field to Specify Player Names Input -->
+            <TextView
+                android:id="@+id/playerNamesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Player Names:"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <!-- Team 1 Player Names Label -->
+            <TextView
+                android:id="@+id/team1PlayerNamesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 1 Player Names"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <!-- Container for dynamically added Team 1 player input fields -->
             <LinearLayout
-                android:id="@+id/playerInputsContainer"
+                android:id="@+id/team1PlayerInputsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="10dp"/>
+
+            <!-- Team 2 Player Names Label -->
+            <TextView
+                android:id="@+id/team2PlayerNamesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 2 Player Names"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <!-- Container for dynamically added Team 2 player input fields -->
+            <LinearLayout
+                android:id="@+id/team2PlayerInputsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Back Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0B0A0A"
+                android:text="Back"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="-390px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="19dp"/>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Toss Button and Back Button Container -->
-    <LinearLayout
-        android:id="@+id/tossButtonContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/black">
-
-        <!-- Back Button -->
-
-        <!-- Toss Button -->
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:background="#0B0A0A"
-            android:text="Back"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/tossButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#282525"
-            android:padding="20dp"
-            android:text="Toss"
-            android:textColor="@android:color/white"
-            android:textSize="25sp" />
-    </LinearLayout>
-
-    <!-- Toss Result TextView -->
-    <TextView
-        android:id="@+id/tossResultTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/tossButtonContainer"
-        android:layout_marginBottom="10dp"
-        android:text="Result will be shown here"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
 </RelativeLayout>

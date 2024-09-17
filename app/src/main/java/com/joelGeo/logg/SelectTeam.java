@@ -6,8 +6,6 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.joelGeo.logg.R;
@@ -27,7 +25,7 @@ public class SelectTeam extends AppCompatActivity {
 
         team1PlayersEditText = findViewById(R.id.team1PlayersEditText);
         team2PlayersEditText = findViewById(R.id.team2PlayersEditText);
-        playerInputsContainer = findViewById(R.id.playerInputsContainer);
+        playerInputsContainer = findViewById(R.id.playerInputsContainer); // Assuming this ID is set in the XML layout
 
         sharedPreferences = getSharedPreferences("TeamPreferences", MODE_PRIVATE);
         editor = sharedPreferences.edit();
@@ -58,11 +56,9 @@ public class SelectTeam extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {}
         });
-
-        Button tossButton = findViewById(R.id.tossButton);
-        tossButton.setOnClickListener(v -> savePlayerNames());
     }
 
+    // Method to dynamically create EditText fields based on the number of players
     private void updatePlayerInputs() {
         playerInputsContainer.removeAllViews(); // Clear previous inputs
 
@@ -94,25 +90,27 @@ public class SelectTeam extends AppCompatActivity {
         }
     }
 
+    // Helper method to get integer from EditText
     private int getIntFromEditText(EditText editText) {
         String text = editText.getText().toString();
         return text.isEmpty() ? 0 : Integer.parseInt(text);
     }
 
+    // Method to save player names in SharedPreferences
     private void savePlayerNames() {
         int team1Players = getIntFromEditText(team1PlayersEditText);
         int team2Players = getIntFromEditText(team2PlayersEditText);
 
         // Save player names for Team 1
         for (int i = 1; i <= team1Players; i++) {
-            EditText playerInput = findViewById(getResources().getIdentifier("team1_player_" + i, "id", getPackageName()));
+            EditText playerInput = (EditText) playerInputsContainer.findViewWithTag("team1_player_" + i);
             String playerName = playerInput != null ? playerInput.getText().toString() : "";
             editor.putString("team1_player_" + i, playerName);
         }
 
         // Save player names for Team 2
         for (int i = 1; i <= team2Players; i++) {
-            EditText playerInput = findViewById(getResources().getIdentifier("team2_player_" + i, "id", getPackageName()));
+            EditText playerInput = (EditText) playerInputsContainer.findViewWithTag("team2_player_" + i);
             String playerName = playerInput != null ? playerInput.getText().toString() : "";
             editor.putString("team2_player_" + i, playerName);
         }
