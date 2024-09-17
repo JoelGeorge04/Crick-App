@@ -10,8 +10,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-200dp"
-        android:text="Welcome!"
+        android:layout_marginTop="-160dp"
+        android:text="Welcome,"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:text="User!"
+        android:textStyle="bold"
+        android:id="@+id/userNameTextView"
         android:textColor="@android:color/white"
         android:textSize="40sp" />
 
@@ -28,13 +40,27 @@
         android:textColor="@android:color/white"
         android:textSize="30sp" />
 
+    <!-- Select Team Button -->
+    <Button
+        android:id="@+id/selectTeamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/startMatchButton"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#282525"
+        android:padding="20dp"
+        android:text="Select Team"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
     <!-- View Match Results Button -->
     <Button
         android:id="@+id/viewResultsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/startMatchButton"
+        android:layout_below="@id/selectTeamButton"
         android:layout_marginTop="20dp"
         android:backgroundTint="#282525"
         android:padding="30dp"

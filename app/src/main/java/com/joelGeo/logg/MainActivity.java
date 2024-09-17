@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
    public void onClick(View view) {
     String userName = e1.getText().toString();
     String passw = e2.getText().toString();
-    if (userName.equals("admin") && passw.equals("1234")) {
+    if (userName.equals("myre") && passw.equals("kunne")) {
      SharedPreferences p = getSharedPreferences("Log", MODE_PRIVATE);
      SharedPreferences.Editor editor = p.edit();
      editor.putString("user", "admin");

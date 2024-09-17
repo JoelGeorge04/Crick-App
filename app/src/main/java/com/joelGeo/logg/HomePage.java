@@ -3,6 +3,7 @@ package com.joelGeo.logg;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -33,6 +34,9 @@ public class HomePage extends AppCompatActivity {
     // Firebase Reference
     private DatabaseReference databaseRef;
 
+    // Vibrator instance
+    private Vibrator vibrator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +50,9 @@ public class HomePage extends AppCompatActivity {
         resultTextView = findViewById(R.id.toss);
         winnerRadioGroup = findViewById(R.id.winnerRadioGroup);
         back = findViewById(R.id.back);
+
+        // Initialize Vibrator
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         // Initialize Firebase reference
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -89,6 +96,11 @@ public class HomePage extends AppCompatActivity {
                 addWinningTeamToFirebase();
                 clearTossResult(); // Clear the toss result after adding match
                 clearLocalData();  // Clear local data from SharedPreferences
+
+                // Vibrate when addMatchButton is clicked
+                if (vibrator != null) {
+                    vibrator.vibrate(200); // Vibrate for 200 milliseconds
+                }
             }
         });
     }
@@ -109,6 +121,11 @@ public class HomePage extends AppCompatActivity {
                 resultTextView.setText(tossResult);
                 isFlipping = false;
                 flipButton.setEnabled(true);
+
+                // Vibrate when flipButton is clicked
+                if (vibrator != null) {
+                    vibrator.vibrate(200); // Vibrate for 200 milliseconds
+                }
             });
         }).start();
     }
