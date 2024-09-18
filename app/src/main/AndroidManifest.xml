@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -14,7 +14,12 @@
         android:roundIcon="@drawable/project"
         android:supportsRtl="true"
         android:theme="@style/Theme.Logg"
-        tools:targetApi="31" >
+        tools:targetApi="31"
+        tools:ignore="ExtraText">
+
+        <activity
+            android:name=".ShufflePlayers"
+            android:exported="false" />
         <activity
             android:name=".SelectTeam"
             android:exported="false" />
@@ -45,7 +50,7 @@
             tools:ignore="DuplicateActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

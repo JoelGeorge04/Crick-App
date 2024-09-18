@@ -1,23 +1,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     android:background="@color/black">
 
-    <!-- ScrollView to handle scrollable content -->
+    <!-- Scrollable content inside the ScrollView -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/backButton"
+        android:fillViewport="true">
 
-        <!-- Content inside the ScrollView -->
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="100dp"> <!-- Padding to avoid overlap with the buttons -->
+            android:padding="20dp"
+            android:background="@color/black">
 
-            <!-- Header Text -->
+            <!-- Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -26,140 +25,77 @@
                 android:textSize="35sp"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="20dp" />
 
-            <!-- Team 1 Player Details -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Team 1 Player Details"
-                android:background="#2196F3"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10px"
-                android:layout_marginTop="30dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/team1PlayersTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:text="Number of Players:"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="35dp"/>
-
-            <EditText
-                android:id="@+id/team1PlayersEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Enter number"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/white"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:textSize="18sp"/>
-
-            <!-- Team 2 Player Details -->
-            <TextView
-                android:id="@+id/separationTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Team 2 Player Details"
-                android:background="#2196F3"
-                android:padding="10px"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:layout_marginTop="30dp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/team2PlayersTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:text="Number of Players:"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="20dp"/>
-
-            <EditText
-                android:id="@+id/team2PlayersEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Enter number"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/white"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:textSize="18sp"/>
-
-            <!-- Text Field to Specify Player Names Input -->
-            <TextView
-                android:id="@+id/playerNamesLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Enter Player Names:"
-                android:textSize="25sp"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:textStyle="bold"/>
-
-            <!-- Team 1 Player Names Label -->
-            <TextView
-                android:id="@+id/team1PlayerNamesLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Team 1 Player Names"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:textStyle="bold"/>
-
-            <!-- Container for dynamically added Team 1 player input fields -->
+            <!-- LinearLayout for TextView and EditText in a single line -->
             <LinearLayout
-                android:id="@+id/team1PlayerInputsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="90dp"
+                android:layout_centerHorizontal="true">
+
+                <!-- TextView to prompt the user to enter number of players -->
+                <TextView
+                    android:id="@+id/playerCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Players: "
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30px"
+                    android:layout_marginEnd="10dp" />
+
+                <!-- EditText for user input of number of players -->
+                <EditText
+                    android:id="@+id/playerCountEditText"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:layout_marginTop="30px"
+                    android:background="@android:color/white"
+                    android:textColor="#000000"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- LinearLayout to hold dynamic EditTexts for player names -->
+            <LinearLayout
+                android:id="@+id/playerNamesContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="10dp"/>
+                android:gravity="center"
+                android:background="#C22A2828"
+                android:layout_marginTop="150dp"
+                android:padding="10dp" />
 
-            <!-- Team 2 Player Names Label -->
-            <TextView
-                android:id="@+id/team2PlayerNamesLabel"
+            <!-- Create Button -->
+            <Button
+                android:id="@+id/createButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team 2 Player Names"
+                android:text="Create Team"
                 android:textSize="20sp"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="20dp"
                 android:padding="10dp"
-                android:textStyle="bold"/>
-
-            <!-- Container for dynamically added Team 2 player input fields -->
-            <LinearLayout
-                android:id="@+id/team2PlayerInputsContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"/>
-
-            <!-- Back Button -->
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#0B0A0A"
-                android:text="Back"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="-390px"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="19dp"/>
-        </LinearLayout>
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/playerNamesContainer"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
     </ScrollView>
 
+    <!-- Back Button, fixed at bottom left -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20sp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
 </RelativeLayout>

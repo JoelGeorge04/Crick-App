@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="15dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Team"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp" />
+
+    <!-- Team 1 TextView -->
+    <TextView
+        android:id="@+id/team1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="110dp"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:padding="20px"
+        android:textStyle="bold" />
+
+    <!-- Team 2 TextView -->
+    <TextView
+        android:id="@+id/team2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/team1TextView"
+        android:layout_marginTop="40dp"
+        android:padding="20px"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Toss and Toss Result LinearLayout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/team2TextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Toss Button -->
+        <Button
+            android:id="@+id/tossButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toss"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Toss Result TextView -->
+        <TextView
+            android:id="@+id/tossResultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toss Status"
+            android:textSize="28sp"
+            android:textColor="#A09C9C" />
+    </LinearLayout>
+
+    <!-- Bottom Button Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <!-- Shuffle Again Button -->
+        <Button
+            android:id="@+id/shuffleAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset ↻"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#A32C2828"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Back Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="17sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</RelativeLayout>

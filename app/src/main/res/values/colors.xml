@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="winning_team_background">#90130A</color> <!-- Background color for winning team -->
+    <color name="default_background">#00000000</color> <!-- Transparent background -->
     <color name="white">#FFFFFFFF</color>
 </resources>
+    <!-- res/values/colors.xml -->
