@@ -30,32 +30,32 @@
         android:maxLines="1"
         android:ellipsize="end" />
 
-    <!-- Start Match Button -->
-    <Button
-        android:id="@+id/startMatchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
-        android:backgroundTint="#A32C2828"
-        android:padding="20dp"
-        android:text="Start Match"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
-
     <!-- Select Team Button -->
     <Button
         android:id="@+id/selectTeamButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/startMatchButton"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="240dp"
         android:backgroundTint="#A32C2828"
         android:padding="20dp"
         android:text="Select Team"
         android:textColor="@android:color/white"
         android:textSize="25sp" />
+
+    <!-- Start Match Button -->
+    <Button
+        android:id="@+id/startMatchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selectTeamButton"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#A32C2828"
+        android:padding="20dp"
+        android:text="Start Match"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
     <!-- View Match Results Button -->
     <Button
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/selectTeamButton"
+        android:layout_below="@id/startMatchButton"
         android:layout_marginTop="20dp"
         android:backgroundTint="#A32C2828"
         android:padding="30dp"

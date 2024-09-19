@@ -4,7 +4,9 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -43,6 +45,7 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
+ private MediaPlayer mediaPlayer; // Declare MediaPlayer
  AppCompatButton b1;
  EditText e1,e2;
  Button btnSignIn,addPlayer;
@@ -55,6 +58,18 @@ public class MainActivity extends AppCompatActivity {
  @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
+
+  mediaPlayer = MediaPlayer.create(this, R.raw.intro); // Replace with your audio file
+  mediaPlayer.start();
+
+  // Stop the music after 4 seconds
+  new Handler().postDelayed(() -> {
+   if (mediaPlayer != null) {
+    mediaPlayer.stop();
+    mediaPlayer.release();
+    mediaPlayer = null;
+   }
+  }, 4000);
 
   loading=new Dialog((this));
   loading.setContentView(R.layout.loading);

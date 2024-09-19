@@ -4,7 +4,7 @@ public class userss {
 
     String name, sixs, fours,role,wickets;
 
-    public userss() {
+    public userss(String name, int i, int parseInt, int anInt, String role) {
     }
 
     public userss(String name, String sixs, String fours, String role , String wickets) {

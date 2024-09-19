@@ -60,8 +60,10 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/google"
         android:text="Google"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="60px" />
+        android:textSize="70px" />
 
 </LinearLayout>

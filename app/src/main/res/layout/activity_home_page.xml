@@ -3,73 +3,63 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#0B0800"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="Start Game"
-            android:textSize="40sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="90dp"
-            android:textStyle="bold"
-            android:layout_height="wrap_content" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/team1"
-            android:textSize="50px"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="Create team1" />
+            android:orientation="vertical"
+            android:background="#0B0800"
+            android:padding="16dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/team2"
-            android:textSize="50px"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="Create team2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Game"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
 
-        <Button
-            android:id="@+id/flipButton"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="50px"
-            android:layout_height="wrap_content"
-            android:text="Flip Coin" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50px"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Create team1" />
 
-        <TextView
-            android:id="@+id/toss"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/flipButton"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="Toss status: "
-            android:textColor="#C1BDBD"
-            android:textSize="70px" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50px"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Create team2" />
 
-        <RadioGroup
-            android:id="@+id/winnerRadioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="-90px"
-            android:layout_gravity="center"
-            android:layout_marginTop="26dp">
+            <Button
+                android:id="@+id/flipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50px"
+                android:layout_marginTop="20dp"
+                android:text="Flip Coin" />
+
+            <TextView
+                android:id="@+id/toss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Toss status: "
+                android:textColor="#C1BDBD"
+                android:textSize="70px" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,42 +68,47 @@
                 android:textSize="25sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:layout_marginLeft="140px"
-                android:layout_marginBottom="300px"
-                android:layout_marginTop="32dp"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp" />
 
-            <RadioButton
-                android:id="@+id/radioTeam1"
+            <RadioGroup
+                android:id="@+id/winnerRadioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team 1"
-                android:layout_marginLeft="-500px"
+                android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:textColor="@color/white" />
+                android:layout_marginTop="16dp">
 
-            <RadioButton
-                android:id="@+id/radioTeam2"
+                <RadioButton
+                    android:id="@+id/radioTeam1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team 1"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioTeam2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team 2"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/addMatch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team 2"
+                android:textSize="90px"
+                android:layout_marginTop="5px"
                 android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:layout_marginStart="16dp" />
-        </RadioGroup>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:textSize="90px"
-            android:layout_marginTop="5px"
-            android:layout_marginLeft="220px"
-            android:text="Add match"
-            android:id="@+id/addMatch"
-            android:layout_height="wrap_content" />
+                android:text="Add match" />
 
         </LinearLayout>
     </ScrollView>
+
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="75px"
@@ -122,10 +117,7 @@
         android:textColor="@color/white"
         android:text="Back"
         android:textAllCaps="false"
-        android:id="@+id/back"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_margin="16dp"/>
+        android:layout_margin="16dp" />
 </RelativeLayout>
-
-
