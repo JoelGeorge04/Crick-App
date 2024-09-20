@@ -21,7 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10px"
-        android:text="Email"
+        android:text="Username"
+        android:textSize="70px"
         android:textColor="#E9E1E1" />
 
     <EditText
@@ -29,12 +30,13 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Enter your Email"
-        android:textColor="#B3A3A3" />
+        android:textColorHint="#A09595" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10px"
+        android:textSize="70px"
         android:text="Password"
         android:textColor="#FAFAFA" />
 
@@ -44,7 +46,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter your Password"
         android:inputType="textPassword"
-        android:textColor="#ABA5A5" />
+        android:textColorHint="#897E7E" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/log"
