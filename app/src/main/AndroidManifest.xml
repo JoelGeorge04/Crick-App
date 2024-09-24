@@ -10,7 +10,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/project"
-        android:label="Vada Kalikam"
+        android:label="Crick"
         android:roundIcon="@drawable/project"
         android:supportsRtl="true"
         android:theme="@style/Theme.Logg"
